@@ -1,0 +1,69 @@
+body {
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-image: url(./pexels-photo-1162251.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+
+.temp{
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+form{
+  margin-top: 5rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border: 2px solid wheat;
+  border-radius: 10px;
+  color: wheat;
+}
+.btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: rgb(140, 4, 142);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+span {
+  margin-bottom: 0.2rem;
+}
+.button,
+.delete{
+  background-color: rgb(101, 2, 97);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
