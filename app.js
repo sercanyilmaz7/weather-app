@@ -29,7 +29,7 @@ form.addEventListener("submit", (e) => {
 
   //   cityinput = input.value;
   form.reset();
-  input.focus();
+  // input.focus();
 });
 
 const getFetchData = () => {
