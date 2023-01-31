@@ -3,6 +3,7 @@ const button = document.querySelector(".button");
 const delete1 = document.querySelector(".delete");
 const container = document.querySelector(".container");
 const form = document.querySelector(".form");
+const msgSpan =document.querySelector(".msgSpan")
 
 let cities = JSON.parse(localStorage.getItem("cities")) || [];
 
@@ -22,7 +23,11 @@ form.addEventListener("submit", (e) => {
   cityinput = input.value;
   //   console.log(cityinput);
   if (cityinput.trim() === "") {
-    alert("please enter a city");
+    msgSpan.innerText = "Please enter a city";
+    setTimeout(()=>{
+      msgSpan.innerText=""
+    },2000)
+    // alert("please enter a city");
   } else {
     getFetchData();
   }
@@ -73,7 +78,10 @@ const createWeatherInfo = (data) => {
     cities.push(cityData);
     localStorage.setItem("cities", JSON.stringify(cities));
   } else {
-    alert("Please enter another city");
+     msgSpan.innerText = "Please enter another city";
+     setTimeout(() => {
+       msgSpan.innerText = "";
+     }, 2000);
   }
 };
 

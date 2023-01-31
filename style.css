@@ -36,6 +36,12 @@ input:focus{
 form{
   margin-top: 5rem;
 }
+
+.msgSpan{
+  position: absolute;
+  margin-top: 2rem;
+  color: white;
+}
 .card {
   position: relative;
   display: flex;
